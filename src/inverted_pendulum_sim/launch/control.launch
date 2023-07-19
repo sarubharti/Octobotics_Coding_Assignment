@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <node pkg="inverted_pendulum_sim" type="inverted_pendulum_sim_node.py" name="InvertedPendulum" output="screen"
+          required="true"/>
+    <node pkg="inverted_pendulum_sim" type="pid_control.py" name="force" output="screen"
+          required="true"/>
+    <node pkg="inverted_pendulum_sim" type="plotter.py" name="plot" output="screen"
+          required="true"/>
+    <node pkg="inverted_pendulum_sim" type="plot_angular.py" name="plot_angular" output="screen"
+          required="true"/>
+</launch>
