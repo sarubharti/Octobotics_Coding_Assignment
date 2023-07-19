@@ -5,7 +5,7 @@
 - [`control`]
 
 ```bash
-pip install pygame
+pip install control
 ```
 
 ```bash
