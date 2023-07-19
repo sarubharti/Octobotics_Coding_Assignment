@@ -21,7 +21,7 @@ roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
 - launch the PID control force simulation and plotting using roslaunch
 
 ```bash
-roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
+roslaunch inverted_pendulum_sim control.launch
 ```
 
 ### Published Topics

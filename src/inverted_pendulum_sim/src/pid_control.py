@@ -7,27 +7,7 @@ from math import*
 import math
 import numpy as np
 from control.matlab import lqr
-# def talker():
-    # pub = rospy.Publisher('/inverted_pendulum/control_force', ControlForce, queue_size=10)
-    # rospy.init_node('talker', anonymous=True)
-    # rate = rospy.Rate(0.1) # 10hz
-    # t=0
-    # Fs=8000
-    # f=500
-    # sample=16
-    # while not rospy.is_shutdown():
-    #     # hello_str = "hello world %s" % rospy.get_time()
-    #     t=t+1
-    #     hello_str=1*sin(2*pi*f*t/Fs)
-    #     rospy.loginfo(hello_str)
-    #     pub.publish(hello_str)
-    #     rate.sleep()
 
-# if __name__ == '__main__':
-#     try:
-#         talker()
-#     except rospy.ROSInterruptException:
-#         pass
 def find_lqr_control_input(cart,pendulum,time_delta,error,previous_error,theta_dot,x_dot,g):
     # Using LQR to find control inputs
    
